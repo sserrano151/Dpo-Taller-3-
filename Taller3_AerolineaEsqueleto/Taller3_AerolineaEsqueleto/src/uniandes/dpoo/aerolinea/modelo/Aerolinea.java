@@ -212,7 +212,7 @@ public class Aerolinea
      */
     public void cargarAerolinea( String archivo, String tipoArchivo ) throws TipoInvalidoException, IOException, InformacionInconsistenteException
     {
-        // TODO implementar
+        
     }
 
     /**
