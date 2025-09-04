@@ -165,7 +165,7 @@ public class Aerolinea
     {
     	for (Vuelo v : vuelos) {
     		if (v.getRuta().getCodigoRuta().equals(codigoRuta) && v.getFecha().equals(fechaVuelo)) {
-    			return v;
+    		 return v;
     		}	
     	}
     	
@@ -185,10 +185,13 @@ public class Aerolinea
      * Retorna todos los tiquetes de la aerolínea, los cuales se recolectan vuelo por vuelo
      * @return
      */
-    public Collection<Tiquete> getTiquetes( )
+    public Collection<Tiquete> getTiquetes( ){
+    	List<Tiquete> todos = new ArrayList<>();
+        for (Vuelo v : vuelos)
+    }
     {
-        // TODO implementar
-        return null;
+      t.addAll(v.getTiquetes());
+        return t;
 
     }
 
